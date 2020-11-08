@@ -123,6 +123,7 @@ class LibOSTreeConan(ConanFile):
                 autotools.install()
         else:
             # on non-linux platforms, expose the header files to help cross-development
+            os.rename(self._source_subfolder+"/src/libostree/ostree-version.h.in", self._source_subfolder+"/src/libostree/ostree-version.h")
             self.copy(pattern="*.h", dst="include/ostree-1", src=self._source_subfolder+"/src/libostree", symlinks=True)
 
     def package_info(self):
