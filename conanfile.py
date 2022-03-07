@@ -11,7 +11,7 @@ class LibOSTreeConan(ConanFile):
     """Download libostree source, build and create package
     """
     name = "libostree"
-    version = "2020.6"
+    version = "2022.1"
     settings = "os", "compiler", "build_type", "arch"
     topics = ("conan", "libostree", "ostree")
     options = {"shared": [True, False], "fPIC": [True, False]}
