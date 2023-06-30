@@ -1,3 +1,1 @@
-# conan-libostree
-
-This repository contains a basic recipe for packaging ostree into a Conan package.
+Moved to https://github.com/totemic/conan-package-recipes/tree/main/libostree
